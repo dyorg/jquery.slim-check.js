@@ -4,9 +4,7 @@
  * @version: v0.1
  * @author: Dyorg Washington G. de Almeida
  * @copyright Dyorg Washington G. de Almeida 2014
- * @link http://dyorg.github.com/slim-check.js/
- * 
- * Please report any bug at http://washingtonstuff.com/
+ * @link http://dyorg.github.com/jquery.slim-check.js/
  *
  * The MIT License (http://www.opensource.org/licenses/mit-license.php)
  *
