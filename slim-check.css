@@ -1,44 +1,48 @@
 
-input[class="slim-check"] { display: none; }
+input[class*="slim-check"] { display: none; }
 
-input[class="slim-check"] + label {
+input[class*="slim-check"] + label {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;	
 	font-size: 13px;
+	
 }
 
-input[class="slim-check"] + label:before {
+input[class*="slim-check"] + label:before {
 	content: "";
 	display: inline-block;
 	position: relative;
 	width: 12px;
 	height: 12px;
-	margin-right: 10px;
 	background-color: #fff;
 	-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
 	border: solid 1px #ccc;
 }
 
-input[class="slim-check"]:not(:disabled) + label:hover:before {
+input[class*="slim-check"]:not(:disabled) + label:hover:before {
 	border-color: #999;
 }
 
-input[class="slim-check"]:checked + label:before {
+input[class*="slim-check"]:checked + label:before {
+    border-color: #87CEEB; 
+ 	background-color: #F0FFFF;
+}
+
+input[class*="slim-check"]:checked + label:after {
 	font-family: "foundation-icons";
 	content: "\f126";
 	font-size: 15px;
 	color: #777;
 	text-align: center;
-    line-height: 13px;
-    border-color: #87CEEB; 
- 	background-color: #F0FFFF
+	position: absolute;
+	left: 1px
 }
 
-input[class="slim-check"]:disabled + label {
+input[class*="slim-check"]:disabled + label {
 	cursor: default;
 }
 
-input[class="slim-check"]:disabled + label:before {
+input[class*="slim-check"]:disabled + label:before {
 	background-color: #eee;
 }
