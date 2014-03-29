@@ -1,0 +1,13 @@
+This plugin make elegante checkbox without images or complex settings.
+
+
+// Include js and css
+<script src="jquery.slim-check.min.js"></script>
+<link rel="stylesheet" href="slim-check.css"/>
+
+
+// Transforme all input checkbox
+$('input[type="checkbox"]').slimCheck();
+
+
+Done!
